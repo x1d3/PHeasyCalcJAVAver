@@ -7,64 +7,11 @@
     android:background="#FFFFFF"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="168dp"
-        android:layout_height="55dp"
-        android:backgroundTint="#FF053EA1"
-        android:text="Напряжение ( U )"
-        tools:layout_editor_absoluteX="227dp"
-        tools:layout_editor_absoluteY="276dp" />
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="168dp"
-        android:layout_height="55dp"
-        android:backgroundTint="#FF053EA1"
-        android:text="Сопротивление ( R )"
-        tools:layout_editor_absoluteX="227dp"
-        tools:layout_editor_absoluteY="477dp" />
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="168dp"
-        android:layout_height="55dp"
-        android:backgroundTint="#FF053EA1"
-        android:text="Работа тока ( A )"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="373dp" />
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="168dp"
-        android:layout_height="55dp"
-        android:backgroundTint="#FF053EA1"
-        android:text="Мощность ( P )"
-        tools:layout_editor_absoluteX="227dp"
-        tools:layout_editor_absoluteY="373dp" />
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="168dp"
-        android:layout_height="55dp"
-        android:backgroundTint="#FF053EA1"
-        android:text="Количество теплоты ( Q )"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="477dp" />
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="168dp"
-        android:layout_height="55dp"
-        android:backgroundTint="#FF053EA1"
-        android:text="Закон Ома ( I )"
-        tools:layout_editor_absoluteX="121dp"
-        tools:layout_editor_absoluteY="566dp" />
-
     <EditText
         android:id="@+id/editTextText"
-        android:layout_width="376dp"
-        android:layout_height="70dp"
+        android:layout_width="316dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="120dp"
         android:allowUndo="false"
         android:backgroundTint="#FFFFFF"
         android:drawableTint="#CC0E0E"
@@ -76,18 +23,100 @@
         android:textAlignment="center"
         android:textColor="#0758F6"
         android:textDirection="firstStrong"
-        android:textSize="24sp"
+        android:textSize="20sp"
         android:textStyle="normal|bold"
-        tools:layout_editor_absoluteX="17dp"
-        tools:layout_editor_absoluteY="168dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="168dp"
         android:layout_height="55dp"
+        android:layout_marginTop="248dp"
+        android:backgroundTint="#FF053EA1"
+        android:text="Напряжение ( U )"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.996"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="168dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="420dp"
+        android:backgroundTint="#053EA1"
+        android:text="Сопротивление ( R )"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="168dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="504dp"
+        android:backgroundTint="#FF053EA1"
+        android:text="Закон Ома ( I )"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="168dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="332dp"
+        android:backgroundTint="#FF053EA1"
+        android:text="Мощность ( P )"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.996"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="168dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="420dp"
+        android:backgroundTint="#FF053EA1"
+        android:text="Количество теплоты ( Q )"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.996"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="168dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="332dp"
+        android:backgroundTint="#FF053EA1"
+        android:text="Работа тока ( A )"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="168dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="248dp"
         android:backgroundTint="#053EA1"
         android:text="Сила тока ( I )"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="276dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="0dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
