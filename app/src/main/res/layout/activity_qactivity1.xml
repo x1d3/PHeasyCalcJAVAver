@@ -10,30 +10,33 @@
         android:id="@+id/spinner2"
         android:layout_width="72dp"
         android:layout_height="28dp"
-        android:layout_marginTop="516dp"
+        android:layout_marginTop="520dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.82"
+        app:layout_constraintHorizontal_bias="0.74"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:entries="@array/spinner_times"/>
 
     <Spinner
-        android:id="@+id/spinner2"
+        android:id="@+id/spinner21"
         android:layout_width="72dp"
         android:layout_height="28dp"
-        android:layout_marginTop="384dp"
+        android:layout_marginTop="388dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.82"
+        app:layout_constraintHorizontal_bias="0.74"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:entries="@array/spinner_items"/>
 
     <EditText
         android:id="@+id/editTextText67"
-        android:layout_width="232dp"
-        android:layout_height="49dp"
+        android:layout_width="301dp"
+        android:layout_height="53dp"
         android:layout_marginTop="448dp"
+        android:backgroundTint="#FFFFFF"
         android:ems="10"
         android:inputType="text"
-        android:text="Введите дельта т (delta t)"
+        android:text="Введите время прохождения тока"
         android:textAlignment="center"
         android:textColor="#1976D2"
         android:textColorHighlight="#1976D2"
@@ -61,6 +64,7 @@
         android:ems="10"
         android:inputType="text"
         android:text="Введите сопротивление ( R )"
+        android:backgroundTint="#FFFFFF"
         android:textAlignment="center"
         android:textColor="#1976D2"
         android:textColorHighlight="#1976D2"
@@ -84,11 +88,13 @@
         android:layout_height="40dp"
         android:layout_marginStart="64dp"
         android:layout_marginTop="72dp"
+        android:backgroundTint="#FFFFFF"
         android:ems="10"
         android:inputType="text"
         android:text="Вы выбрали количество теплоты"
         android:textAlignment="center"
         android:textColor="#1976D2"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -98,6 +104,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
         android:layout_marginTop="180dp"
+        android:backgroundTint="#FFFFFF"
         android:ems="10"
         android:inputType="text"
         android:text="Введите силу тока ( I )"
@@ -120,8 +127,9 @@
 
     <Button
         android:id="@+id/button7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="163dp"
+        android:layout_height="51dp"
+        android:backgroundTint="#FF053EA1"
         android:text="далее"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -130,13 +138,44 @@
         app:layout_constraintVertical_bias="0.863" />
 
     <Spinner
-        android:id="@+id/spinner2"
+        android:id="@+id/spinner23"
         android:layout_width="72dp"
         android:layout_height="28dp"
-        android:layout_marginTop="252dp"
+        android:layout_marginTop="256dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.82"
+        app:layout_constraintHorizontal_bias="0.737"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:entries="@array/spinner_items"/>
+
+    <EditText
+        android:id="@+id/editTextText98"
+        android:layout_width="72dp"
+        android:layout_height="41dp"
+        android:ems="10"
+        android:inputType="text"
+        android:backgroundTint="#FFFFFF"
+        android:text="А"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.952"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.371" />
+
+    <EditText
+        android:id="@+id/editTextText19"
+        android:layout_width="72dp"
+        android:layout_height="41dp"
+        android:ems="10"
+        android:backgroundTint="#FFFFFF"
+        android:inputType="text"
+        android:text="Ом"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.952"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.562" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

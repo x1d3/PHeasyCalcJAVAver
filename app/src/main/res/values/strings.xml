@@ -1,3 +1,20 @@
 <resources>
     <string name="app_name">PHeasy Calc</string>
+    <string-array name="spinner_items">
+        <item>пико</item>
+        <item>нано</item>
+        <item>микро</item>
+        <item>милли</item>
+        <item>кило</item>
+        <item>мега</item>
+        <item>гига</item>
+        <item>тера</item>
+        <item>none</item>
+    </string-array>
+    <string-array name="spinner_times">
+        <item>минут</item>
+        <item>секунд</item>
+        <item>часов</item>
+        <item>миллисекунд</item>
+    </string-array>
 </resources>

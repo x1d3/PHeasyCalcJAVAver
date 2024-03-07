@@ -19,6 +19,7 @@
         android:fontFamily="@font/advent_pro_bold"
         android:inputType="text"
         android:text="Получим результат"
+        android:backgroundTint="#FFFFFF"
         android:textAlignment="center"
         android:textColor="#0288D1"
         app:layout_constraintStart_toStartOf="parent"
@@ -32,7 +33,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/A" />
+        app:srcCompat="@drawable/apic" />
 
     <EditText
         android:id="@+id/editTextText3"
@@ -45,6 +46,7 @@
         android:fontFamily="@font/advent_pro_bold"
         android:inputType="text"
         android:text="Воспользуемся следующей формулой:"
+        android:backgroundTint="#FFFFFF"
         android:textAlignment="center"
         android:textColor="#0288D1"
         app:layout_constraintStart_toStartOf="parent"
@@ -69,7 +71,8 @@
         android:layout_marginTop="308dp"
         android:dropDownWidth="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:entries="@array/spinner_items"/>
 
     <EditText
         android:id="@+id/editTextText5"
@@ -80,15 +83,21 @@
         android:ems="10"
         android:inputType="text"
         android:text="ДЖ"
+        android:backgroundTint="#FFFFFF"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="150dp"
+        android:layout_height="47dp"
+        android:backgroundTint="#FF053EA1"
         android:text="Далее"
-        tools:layout_editor_absoluteX="165dp"
-        tools:layout_editor_absoluteY="384dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.561" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
