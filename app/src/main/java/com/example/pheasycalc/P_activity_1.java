@@ -29,9 +29,9 @@ public class P_activity_1 extends AppCompatActivity {
         Spinner spinnerTime = findViewById(R.id.spinner21);
 
         ArrayAdapter<CharSequence> adapterTime = ArrayAdapter.createFromResource(this,
-                R.array.spinner_times, android.R.layout.simple_spinner_item);
+                R.array.spinner_items, android.R.layout.simple_spinner_item);
         adapterTime.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spinnerTime.setAdapter(adapterTime);
+        spinnerTime.setAdapter(adapter);
 
         // Обработчик события для кнопки "Далее"
         Button nextButton = findViewById(R.id.button7);
