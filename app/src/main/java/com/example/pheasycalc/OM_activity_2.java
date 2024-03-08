@@ -70,23 +70,24 @@ public class OM_activity_2 extends AppCompatActivity {
     private double getMultiplier(int position) {
         switch (position) {
             case 0: // Пико
-                return 1e-12;
-            case 1: // Нано
-                return 1e-9;
-            case 2: // Микро
-                return 1e-6;
-            case 3: // Милли
-                return 1e-3;
-            case 4: // Кило
-                return 1e3;
-            case 5: // Мега
-                return 1e6;
-            case 6: // Гига
-                return 1e9;
-            case 7: // Тера
                 return 1e12;
+            case 1: // Нано
+                return 1e9;
+            case 2: // Микро
+                return 1e6;
+            case 3: // Милли
+                return 1e3;
+            case 4: // Кило
+                return 1e-3;
+            case 5: // Мега
+                return 1e-6;
+            case 6: // Гига
+                return 1e-9;
+            case 7: // Тера
+                return 1e-12;
             default: // None
                 return 1;
         }
     }
 }
+
