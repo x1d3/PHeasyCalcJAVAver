@@ -10,7 +10,6 @@
         android:id="@+id/editTextText6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
         android:layout_marginTop="144dp"
         android:backgroundTint="#FFFFFF"
         android:ems="10"
@@ -20,6 +19,7 @@
         android:textColor="#1976D2"
         android:textColorHighlight="#1976D2"
         android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -27,7 +27,6 @@
         android:id="@+id/editTextText2"
         android:layout_width="335dp"
         android:layout_height="42dp"
-        android:layout_marginStart="36dp"
         android:layout_marginTop="68dp"
         android:backgroundTint="#FFFFFF"
         android:ems="10"
@@ -37,6 +36,7 @@
         android:textColor="#1976D2"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
