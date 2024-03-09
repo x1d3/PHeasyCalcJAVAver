@@ -17,9 +17,6 @@ public class I_activity_1 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_iactivity1);
 
-        // Получение переданных данных из Intent
-        Intent intent = getIntent();
-
         // Отображение единиц измерения в Spinner
         Spinner spinner = findViewById(R.id.spinner23);
 
@@ -56,12 +53,60 @@ public class I_activity_1 extends AppCompatActivity {
         double value2 = Double.parseDouble(editTextNumber2.getText().toString());
         double value22 = Double.parseDouble(editTextNumber22.getText().toString());
 
+        // Получение выбранных элементов из Spinner
+        Spinner spinner23 = findViewById(R.id.spinner23);
+        String unit1 = spinner23.getSelectedItem().toString();
+        Spinner spinner2 = findViewById(R.id.spinner2);
+        String timeUnit = spinner2.getSelectedItem().toString();
+
+        // Выполнение расчетов в соответствии с выбранными значениями
+        double multiplier1 = getMultiplier(unit1);
+        double multiplier2 = getTimeMultiplier(timeUnit);
+
         // Выполнение расчетов
-        double calculatedResult = value2 / value22;
+        double calculatedResult = (value2 * multiplier1) / (value22 * multiplier2);
 
         // Переход к следующей активности и передача результата
         Intent intent = new Intent(I_activity_1.this, I_activity_2.class);
         intent.putExtra("result", calculatedResult);
         startActivity(intent);
+    }
+
+    // Метод для получения множителя для единиц измерения
+    private double getMultiplier(String unit) {
+        switch (unit) {
+            case "пико":
+                return 1e-12;
+            case "нано":
+                return 1e-9;
+            case "микро":
+                return 1e-6;
+            case "милли":
+                return 1e-3;
+            case "кило":
+                return 1e3;
+            case "мега":
+                return 1e6;
+            case "гига":
+                return 1e9;
+            case "тера":
+                return 1e12;
+            default:
+                return 1;
+        }
+    }
+
+    // Метод для получения множителя для временных единиц
+    private double getTimeMultiplier(String unit) {
+        switch (unit) {
+            case "минут":
+                return 60;
+            case "часов":
+                return 3600;
+            case "миллисекунд":
+                return 0.001;
+            default:
+                return 1;
+        }
     }
 }
