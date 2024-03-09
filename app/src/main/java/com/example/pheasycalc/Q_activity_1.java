@@ -7,7 +7,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
-import android.widget.TextView;
 
 public class Q_activity_1 extends AppCompatActivity {
 
@@ -36,7 +35,7 @@ public class Q_activity_1 extends AppCompatActivity {
                 Spinner spinner2 = findViewById(R.id.spinner2);
                 String timeUnit = spinner2.getSelectedItem().toString();
 
-                // Вычисления
+                // Вычисления с учетом выбранных значений в спиннерах
                 double result = calculateResult(value1, value2, value3, unit1, unit2, timeUnit);
 
                 // Передача результата в следующую активность
@@ -48,11 +47,52 @@ public class Q_activity_1 extends AppCompatActivity {
     }
 
     private double calculateResult(double value1, double value2, double value3, String unit1, String unit2, String timeUnit) {
-        // Выполнение вычислений
-        // Реализуйте здесь необходимые вычисления в соответствии с вашей формулой
-        // Пример:
-        double result = Math.pow(value1, 2) * value2 * value3;
-        // Дополните этот метод в соответствии с вашей логикой
+        // Выполнение вычислений с учетом выбранных значений в спиннерах
+        double multiplier1 = getMultiplier(unit1);
+        double multiplier2 = getMultiplier(unit2);
+        double multiplier3 = getTimeMultiplier(timeUnit);
+
+        // Вычисление результата
+        double result = Math.pow(value1, 2) * multiplier1 * value2 * multiplier2 * value3 * multiplier3;
+
         return result;
+    }
+
+    private double getMultiplier(String unit) {
+        // Получение множителя в зависимости от выбранного значения в спиннере
+        switch (unit) {
+            case "пико":
+                return 1e-12;
+            case "нано":
+                return 1e-9;
+            case "микро":
+                return 1e-6;
+            case "милли":
+                return 1e-3;
+            case "кило":
+                return 1e3;
+            case "мега":
+                return 1e6;
+            case "гига":
+                return 1e9;
+            case "тера":
+                return 1e12;
+            default:
+                return 1; // Для значения "none"
+        }
+    }
+
+    private double getTimeMultiplier(String timeUnit) {
+        // Получение множителя для типа времени
+        switch (timeUnit) {
+            case "минут":
+                return 60;
+            case "часов":
+                return 3600;
+            case "миллисекунд":
+                return 0.001;
+            default:
+                return 1; // Для "секунд"
+        }
     }
 }
