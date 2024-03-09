@@ -69,24 +69,24 @@ public class A_activity_2 extends AppCompatActivity {
     // Метод для получения множителя в зависимости от выбора в Spinner
     private double getMultiplier(int position) {
         switch (position) {
-            case 0: // Пико
-                return 1e12;
-            case 1: // Нано
-                return 1e9;
-            case 2: // Микро
-                return 1e6;
-            case 3: // Милли
-                return 1e3;
-            case 4: // Кило
-                return 1e-3;
-            case 5: // Мега
-                return 1e-6;
-            case 6: // Гига
-                return 1e-9;
-            case 7: // Тера
-                return 1e-12;
-            default: // None
+            case 0: // none
                 return 1;
+            case 1: // pico
+                return 1e12;
+            case 2: // nano
+                return 1e9;
+            case 3: // micro
+                return 1e6;
+            case 4: // milli
+                return 1e3;
+            case 5: // kilo
+                return 1e-3;
+            case 6: // mega
+                return 1e-6;
+            case 7: // giga
+                return 1e-9;
+            default: // tera
+                return 1e-12;
         }
     }
 }
