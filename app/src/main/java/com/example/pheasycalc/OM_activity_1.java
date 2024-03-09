@@ -53,12 +53,46 @@ public class OM_activity_1 extends AppCompatActivity {
         double value2 = Double.parseDouble(editTextNumber2.getText().toString());
         double value21 = Double.parseDouble(editTextNumber21.getText().toString());
 
+        // Получение выбранных элементов из Spinner
+        Spinner spinner23 = findViewById(R.id.spinner23);
+        String unit1 = spinner23.getSelectedItem().toString();
+        Spinner spinner21 = findViewById(R.id.spinner21);
+        String unit2 = spinner21.getSelectedItem().toString();
+
+        // Выполнение расчетов в соответствии с выбранными значениями
+        double multiplier1 = getMultiplier(unit1);
+        double multiplier2 = getMultiplier(unit2);
+
         // Выполнение расчетов
-        double calculatedResult = value2 * value21;
+        double calculatedResult = (value2 * multiplier1) / (value21 * multiplier2);
 
         // Переход к следующей активности и передача результата
         Intent intent = new Intent(OM_activity_1.this, OM_activity_2.class);
         intent.putExtra("result", calculatedResult);
         startActivity(intent);
+    }
+
+    // Метод для получения множителя для единиц измерения
+    private double getMultiplier(String unit) {
+        switch (unit) {
+            case "пико":
+                return 1e-12;
+            case "нано":
+                return 1e-9;
+            case "микро":
+                return 1e-6;
+            case "милли":
+                return 1e-3;
+            case "кило":
+                return 1e3;
+            case "мега":
+                return 1e6;
+            case "гига":
+                return 1e9;
+            case "тера":
+                return 1e12;
+            default:
+                return 1;
+        }
     }
 }
