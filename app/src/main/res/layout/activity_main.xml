@@ -4,7 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
+    android:background="#1976D2"
+    android:backgroundTint="#1976D2"
+    android:foregroundTint="#1976D2"
     tools:context=".MainActivity">
 
     <TextView
@@ -20,7 +22,7 @@
         android:singleLine="false"
         android:text="Выберите, что вы хотите найти:"
         android:textAlignment="center"
-        android:textColor="#0758F6"
+        android:textColor="#F8FBFF"
         android:textDirection="firstStrong"
         android:textSize="22sp"
         android:textStyle="normal|bold"
