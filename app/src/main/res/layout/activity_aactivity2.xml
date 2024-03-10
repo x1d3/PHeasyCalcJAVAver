@@ -10,27 +10,29 @@
         android:id="@+id/editTextNumber"
         android:layout_width="204dp"
         android:layout_height="45dp"
-        android:layout_marginTop="308dp"
         android:ems="10"
         android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.009"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.448" />
 
     <TextView
         android:id="@+id/editTextText5"
         android:layout_width="48dp"
         android:layout_height="40dp"
-        android:layout_marginTop="308dp"
         android:backgroundTint="#FFFFFF"
         android:ems="10"
         android:text="Дж"
         android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.988"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.445" />
 
     <Button
         android:id="@+id/button9"
@@ -49,7 +51,6 @@
         android:id="@+id/editTextText4"
         android:layout_width="208dp"
         android:layout_height="37dp"
-        android:layout_marginTop="224dp"
         android:backgroundTint="#FFFFFF"
         android:ems="10"
         android:fontFamily="@font/advent_pro_bold"
@@ -57,28 +58,30 @@
         android:textAlignment="center"
         android:textColor="#0288D1"
         android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.35" />
 
     <Spinner
         android:id="@+id/spinner"
         android:layout_width="112dp"
         android:layout_height="36dp"
-        android:layout_marginTop="308dp"
         android:dropDownWidth="wrap_content"
         android:entries="@array/spinner_items"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.826"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.443" />
 
     <TextView
         android:id="@+id/editTextText3"
         android:layout_width="389dp"
         android:layout_height="66dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="64dp"
         android:backgroundTint="#FFFFFF"
         android:drawableTint="#FFFFFF"
         android:ems="1"
@@ -87,16 +90,20 @@
         android:textAlignment="center"
         android:textColor="#0288D1"
         android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.132" />
 
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="144dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.226"
         app:srcCompat="@drawable/apic" />
 </androidx.constraintlayout.widget.ConstraintLayout>

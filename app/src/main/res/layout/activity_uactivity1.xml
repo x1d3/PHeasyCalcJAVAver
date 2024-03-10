@@ -81,7 +81,7 @@
 
     <TextView
         android:id="@+id/editTextText98"
-        android:layout_width="46dp"
+        android:layout_width="32dp"
         android:layout_height="36dp"
         android:backgroundTint="#FFFFFF"
         android:ems="10"
