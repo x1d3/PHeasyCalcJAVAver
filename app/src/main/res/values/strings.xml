@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">PHeasy Calc</string>
     <string-array name="spinner_items">
-        <item>none</item>
+        <item>  —  </item>
         <item>пико</item>
         <item>нано</item>
         <item>микро</item>
