@@ -9,9 +9,8 @@
 
     <TextView
         android:id="@+id/editTextText"
-        android:layout_width="316dp"
-        android:layout_height="67dp"
-        android:layout_marginTop="160dp"
+        android:layout_width="384dp"
+        android:layout_height="51dp"
         android:allowUndo="false"
         android:backgroundTint="#FFFFFF"
         android:drawableTint="#CC0E0E"
@@ -23,12 +22,15 @@
         android:textAlignment="center"
         android:textColor="#0758F6"
         android:textDirection="firstStrong"
-        android:textSize="20sp"
+        android:textSize="22sp"
         android:textStyle="normal|bold"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.239" />
 
     <Button
         android:id="@+id/button"
@@ -38,19 +40,31 @@
         android:backgroundTint="#FF053EA1"
         android:text="Напряжение ( U )"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.996"
+        app:layout_constraintHorizontal_bias="0.975"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/button3"
+        android:layout_width="168dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="332dp"
+        android:backgroundTint="#FF053EA1"
+        android:text="Мощность ( P )"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.975"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button4"
         android:layout_width="168dp"
         android:layout_height="55dp"
         android:layout_marginTop="420dp"
-        android:backgroundTint="#053EA1"
-        android:text="Сопротивление ( R )"
+        android:backgroundTint="#FF053EA1"
+        android:text="Количество теплоты ( Q )"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.975"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -66,26 +80,26 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/button6"
         android:layout_width="168dp"
         android:layout_height="55dp"
-        android:layout_marginTop="332dp"
-        android:backgroundTint="#FF053EA1"
-        android:text="Мощность ( P )"
+        android:layout_marginTop="248dp"
+        android:backgroundTint="#053EA1"
+        android:text="Сила тока ( I )"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.996"
+        app:layout_constraintHorizontal_bias="0.028"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/button1"
         android:layout_width="168dp"
         android:layout_height="55dp"
         android:layout_marginTop="420dp"
-        android:backgroundTint="#FF053EA1"
-        android:text="Количество теплоты ( Q )"
+        android:backgroundTint="#053EA1"
+        android:text="Сопротивление ( R )"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.996"
+        app:layout_constraintHorizontal_bias="0.028"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -97,19 +111,7 @@
         android:backgroundTint="#FF053EA1"
         android:text="Работа тока ( A )"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/button6"
-        android:layout_width="168dp"
-        android:layout_height="55dp"
-        android:layout_marginTop="248dp"
-        android:backgroundTint="#053EA1"
-        android:text="Сила тока ( I )"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.028"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
