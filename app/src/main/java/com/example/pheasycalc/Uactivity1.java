@@ -4,13 +4,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
 
-public class U_activity_1 extends AppCompatActivity {
+public class Uactivity1 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -67,7 +66,7 @@ public class U_activity_1 extends AppCompatActivity {
         double calculatedResult = value2 * multiplier1 * value21 * multiplier2;
 
         // Переход к следующей активности и передача результата
-        Intent intent = new Intent(U_activity_1.this, U_activity_2.class);
+        Intent intent = new Intent(Uactivity1.this, Uactivity2.class);
         intent.putExtra("result", calculatedResult);
         startActivity(intent);
     }

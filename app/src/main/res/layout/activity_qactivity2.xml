@@ -7,7 +7,7 @@
     android:background="#FFFFFF"
     android:backgroundTint="#FFFFFF"
     android:foregroundTint="#F6F1F1"
-    tools:context=".Q_activity_2">
+    tools:context=".Qactivity2">
 
     <EditText
         android:id="@+id/editTextNumber"

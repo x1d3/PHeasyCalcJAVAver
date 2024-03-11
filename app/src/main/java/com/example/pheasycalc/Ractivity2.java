@@ -10,7 +10,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
 
-public class U_activity_2 extends AppCompatActivity {
+public class Ractivity2 extends AppCompatActivity {
 
     private double result = 0;
     private double currentMultiplier = 1; // Начальный множитель
@@ -18,7 +18,7 @@ public class U_activity_2 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_uactivity2);
+        setContentView(R.layout.activity_ractivity2);
 
         // Получение переданных данных из Intent
         Intent intent = getIntent();
@@ -59,7 +59,7 @@ public class U_activity_2 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Создание Intent для перехода к MainActivity
-                Intent intent = new Intent(U_activity_2.this, MainActivity.class);
+                Intent intent = new Intent(Ractivity2.this, MainActivity.class);
                 // Запуск MainActivity
                 startActivity(intent);
             }

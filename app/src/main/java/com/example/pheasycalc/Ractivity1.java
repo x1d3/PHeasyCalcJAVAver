@@ -4,18 +4,17 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
 
-public class OM_activity_1 extends AppCompatActivity {
+public class Ractivity1 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_om1);
+        setContentView(R.layout.activity_ractivity1);
 
         // Отображение единиц измерения в Spinner
         Spinner spinner = findViewById(R.id.spinner23);
@@ -67,7 +66,7 @@ public class OM_activity_1 extends AppCompatActivity {
         double calculatedResult = (value2 * multiplier1) / (value21 * multiplier2);
 
         // Переход к следующей активности и передача результата
-        Intent intent = new Intent(OM_activity_1.this, OM_activity_2.class);
+        Intent intent = new Intent(Ractivity1.this, Ractivity2.class);
         intent.putExtra("result", calculatedResult);
         startActivity(intent);
     }
