@@ -14,66 +14,68 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button button6 = findViewById(R.id.button6);
-        Button button = findViewById(R.id.button);
-        Button button5 = findViewById(R.id.button5);
-        Button button3 = findViewById(R.id.button3);
-        Button button1 = findViewById(R.id.button1);
-        Button button4 = findViewById(R.id.button4);
-        Button button2 = findViewById(R.id.button2);
+        Button Ibutton = findViewById(R.id.button6);
+        Button Ubutton = findViewById(R.id.button);
+        Button Abutton = findViewById(R.id.button5);
+        Button Pbutton = findViewById(R.id.button3);
+        Button Rbutton = findViewById(R.id.button1);
+        Button Qbutton = findViewById(R.id.button4);
+        Button OMbutton = findViewById(R.id.button2);
 
-        button6.setOnClickListener(new View.OnClickListener() {
+        String str = Test.INSTANCE.getHelloStr();
+
+        Ibutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, I_activity_1.class);
+                Intent intent = new Intent(MainActivity.this, Iactivity1.class);
                 startActivity(intent);
             }
         });
 
-        button.setOnClickListener(new View.OnClickListener() {
+        Ubutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, U_activity_1.class);
+                Intent intent = new Intent(MainActivity.this, Uactivity1.class);
                 startActivity(intent);
             }
         });
 
-        button5.setOnClickListener(new View.OnClickListener() {
+        Abutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, A_activity_1.class);
+                Intent intent = new Intent(MainActivity.this, Aactivity1.class);
                 startActivity(intent);
             }
         });
 
-        button3.setOnClickListener(new View.OnClickListener() {
+        Pbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, P_activity_1.class);
+                Intent intent = new Intent(MainActivity.this, Pactivity1.class);
                 startActivity(intent);
             }
         });
 
-        button1.setOnClickListener(new View.OnClickListener() {
+        Rbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, R_activity_1.class);
+                Intent intent = new Intent(MainActivity.this, Ractivity1.class);
                 startActivity(intent);
             }
         });
 
-        button4.setOnClickListener(new View.OnClickListener() {
+        Qbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, Q_activity_1.class);
+                Intent intent = new Intent(MainActivity.this, Qactivity1.class);
                 startActivity(intent);
             }
         });
 
-        button2.setOnClickListener(new View.OnClickListener() {
+        OMbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, OM_activity_1.class);
+                Intent intent = new Intent(MainActivity.this, OMactivity1.class);
                 startActivity(intent);
             }
         });

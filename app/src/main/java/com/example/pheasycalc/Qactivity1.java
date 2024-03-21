@@ -8,7 +8,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
 
-public class Q_activity_1 extends AppCompatActivity {
+public class Qactivity1 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,7 +39,7 @@ public class Q_activity_1 extends AppCompatActivity {
                 double result = calculateResult(value1, value2, value3, unit1, unit2, timeUnit);
 
                 // Передача результата в следующую активность
-                Intent intent = new Intent(Q_activity_1.this, Q_activity_2.class);
+                Intent intent = new Intent(Qactivity1.this, Qactivity2.class);
                 intent.putExtra("result", result);
                 startActivity(intent);
             }

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".R_activity_1">
+    tools:context=".Ractivity1">
 
     <TextView
         android:id="@+id/editTextText6"
@@ -95,6 +95,21 @@
         app:layout_constraintVertical_bias="0.346" />
 
     <TextView
+        android:id="@+id/editTextText98"
+        android:layout_width="31dp"
+        android:layout_height="37dp"
+        android:backgroundTint="#FFFFFF"
+        android:ems="10"
+        android:text="В"
+        android:textSize="29sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.623" />
+
+    <TextView
         android:id="@+id/editTextText67"
         android:layout_width="301dp"
         android:layout_height="53dp"
@@ -124,21 +139,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.635" />
-
-    <TextView
-        android:id="@+id/editTextText984"
-        android:layout_width="37dp"
-        android:layout_height="39dp"
-        android:backgroundTint="#FFFFFF"
-        android:ems="10"
-        android:text="Вт"
-        android:textSize="29sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.627" />
 
     <Spinner
         android:id="@+id/spinner21"
