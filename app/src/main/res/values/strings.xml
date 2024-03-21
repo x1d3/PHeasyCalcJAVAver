@@ -17,4 +17,15 @@
         <item>часов</item>
         <item>миллисекунд</item>
     </string-array>
+    <string-array name="spinner_kg">
+        <item>кг</item>
+        <item>милиграмм</item>
+        <item>грамм</item>
+        <item>тонна</item>
+    </string-array>
+    <string-array name="spinner_m">
+        <item>м</item>
+        <item>см</item>
+        <item>км</item>
+    </string-array>
 </resources>
