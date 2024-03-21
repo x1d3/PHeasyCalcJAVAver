@@ -1,11 +1,10 @@
 package com.example.pheasycalc;
+
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-
-
 
 public class MainActivity extends AppCompatActivity {
 
@@ -21,8 +20,8 @@ public class MainActivity extends AppCompatActivity {
         Button Rbutton = findViewById(R.id.button1);
         Button Qbutton = findViewById(R.id.button4);
         Button OMbutton = findViewById(R.id.button2);
-
-        String str = Test.INSTANCE.getHelloStr();
+        Button gravityButton = findViewById(R.id.button_gravity);
+        Button elasticityButton = findViewById(R.id.button_elasticity);
 
         Ibutton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -76,6 +75,22 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, OMactivity1.class);
+                startActivity(intent);
+            }
+        });
+
+        gravityButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, KotlinFTyazhActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        elasticityButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, activity_kotlin_fypr_1.class);
                 startActivity(intent);
             }
         });

@@ -13,6 +13,18 @@
         android:theme="@style/Theme.PHeasyCalc"
         tools:targetApi="31">
         <activity
+            android:name=".activity_kotlin_fypr_2"
+            android:exported="false" />
+        <activity
+            android:name=".activity_kotlin_fypr_1"
+            android:exported="false" />
+        <activity
+            android:name=".activity_kotlin_f_tyazh_2"
+            android:exported="false" />
+        <activity
+            android:name=".KotlinFTyazhActivity"
+            android:exported="false" />
+        <activity
             android:name=".OMactivity2"
             android:exported="false" />
         <activity
