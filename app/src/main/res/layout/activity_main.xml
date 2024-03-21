@@ -27,10 +27,10 @@
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintHorizontal_bias="0.481"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.239" />
+        app:layout_constraintVertical_bias="0.11" />
 
     <Button
         android:id="@+id/button"
@@ -41,6 +41,30 @@
         android:text="Напряжение ( U )"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.975"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_elasticity"
+        android:layout_width="168dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="164dp"
+        android:backgroundTint="#C2185B"
+        android:text="Сила упругости ( Fупр )"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.975"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_gravity"
+        android:layout_width="168dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="164dp"
+        android:backgroundTint="#C2185B"
+        android:text="Сила тяжести ( Fтяж )"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.028"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
